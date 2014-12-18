@@ -1,0 +1,17 @@
+
+What did you learn about KnockoutJS?
+learned about adding lists and modify my child list, how can I change the lyrics in real time sorting lists, and add virtually everything we saw on this projects
+What is MVVC? Why is it usefull?
+
+is a design pattern for building user interfaces
+model: to read and write this stored model data
+ A view model: a pure-code representation of the data and operations on a UI
+A view: a visible, interactive UI representing the state of the view model
+
+What does the data-bind attribute do?
+to link the data with the user interface.
+
+What does the following code do? ko.applyBindings(viewModel);?
+I understood why I next data-bind is used, serves to activate the knockout
+
+

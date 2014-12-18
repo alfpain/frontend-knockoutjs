@@ -2,9 +2,9 @@
 background-color: #EEEEDD;
 border: solid; 
 text-align: center;
--webkit-border-radius: 80px;
--moz-border-radius: 80px;
-border-radius: 80px;
+-webkit-border-radius: 45px;
+-moz-border-radius: 45px;
+border-radius: 45px;
 }
 .welcome {
 background-color: #EEEEDD;
@@ -13,4 +13,9 @@ text-align: center;
 -webkit-border-radius: 5px;
 -moz-border-radius: 5px;
 border-radius: 5px;
+
+}
+.label {
+color :black;
+
 }

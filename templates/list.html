@@ -1,0 +1,83 @@
+
+<html>
+	<head>
+		<title>knockout list</title>
+		
+		<Link rel = "stylesheet" href = "../bootstrap/css/bootstrap.min.css" type = "text/css"/>
+		<Link rel = "stylesheet" href = "../bootstrap/css/bootstrap.css.map" type = "text/css"/>
+		<Link rel = "stylesheet" href = "../bootstrap/css/bootstrap-theme.css" type = "text/css"/>
+		<Link rel = "stylesheet" href = "../bootstrap/css/bootstrap-theme.css.map" type = "text/css"/>
+		<Link rel = "stylesheet" href = "../bootstrap/css/bootstrap-theme.min.css" type = "text/css"/>
+		<link rel='stylesheet' href='../css/styles_list.css' type='text/css'>
+	</head>
+	<body background = "http://www.ambrosiasw.com/assets/images/graphics_products/ipadwallpaper/wallpaper/Leather.jpg">
+		<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Home</a>
+					<a href="https://github.com/alfpain" target="blank" class="navbar-btn btn-info btn pull-right">Look my Github</a>
+
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My pages<span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="../index.html">Frits page</a></li>
+								<li class="divider"></li>
+								<li><a href="controls.html">Controler</a></li>
+								<li class="divider"></li>
+								<li><a href="collections.html">People Collections</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+				<div class="jumbotron top">
+			<div class = "row">
+				<div class = "col-md-1"></div>
+				<div class ="col-md-10">
+				<h1>Grocery List (use list.html)</h1>
+				</div>
+			</div>
+		</div>
+		<div class = "container">
+			<div class = "row">
+				<div class = "col-md-2">
+					<div class = "welcome"><h2>Welcome</h2></div>
+				</div>
+				<div class = "col-md-7">
+					<div class='liveExample'> 
+						<h3>To add more elements to the list, enter here</h3>
+						<form data-bind="submit:addItem">
+							Add item: <input type="text" data-bind='value:itemToAdd, valueUpdate: "afterkeydown"' />
+							<button type="submit" data-bind="enable: itemToAdd().length > 0">Add</button>
+						</form>
+						<p>Your values:</p>
+						<select multiple="multiple" height="5" data-bind="options:allItems, selectedOptions:selectedItems"> </select>
+						<div>
+							<button data-bind="click: removeSelected, enable: selectedItems().length > 0">Remove</button>
+							<button data-bind="click: sortItems, enable: allItems().length > 1">Sort</button>
+						</div>
+					</div>
+				</div>
+				<div class ="col-md-2">
+					<div class = "welcome"><h3>Grocery List</h3></div>
+				</div>
+			</div>
+		</div>
+	<script type="text/javascript" src = "http://knockoutjs.com/downloads/knockout-3.2.0.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+	<script src="../js/script_list.js"></script>
+	</body>
+</html>
