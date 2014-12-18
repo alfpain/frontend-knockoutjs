@@ -2,14 +2,16 @@
 <html>
 	<head>
 		<title>knockout controler</title>
-		
+		<!-- link the css and bootstrap-->
 		<Link rel = "stylesheet" href = "../bootstrap/css/bootstrap.min.css" type = "text/css"/>
 		<Link rel = "stylesheet" href = "../bootstrap/css/bootstrap.css.map" type = "text/css"/>
 		<Link rel = "stylesheet" href = "../bootstrap/css/bootstrap-theme.css" type = "text/css"/>
 		<Link rel = "stylesheet" href = "../bootstrap/css/bootstrap-theme.css.map" type = "text/css"/>
 		<Link rel = "stylesheet" href = "../bootstrap/css/bootstrap-theme.min.css" type = "text/css"/>
 		<link rel='stylesheet' href='../css/styles_controls.css' type='text/css'>
+		<!-- link the css and bootstrap-->
 	</head>
+
 	<body background = "http://www.ambrosiasw.com/assets/images/graphics_products/ipadwallpaper/wallpaper/Leather.jpg">
 		<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
 			<div class="container-fluid">
@@ -24,7 +26,7 @@
 					<a class="navbar-brand" href="#">Home</a>
 					<a href="https://github.com/alfpain" target="blank" class="navbar-btn btn-info btn pull-right">Look my Github</a>
 
-				</div>
+				</div><!-- navbar-header -->
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
@@ -43,7 +45,7 @@
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
-		</nav>
+		</nav>  <!--end nav-->
 		<div class="jumbotron top">
 			<div class = "row">
 				<div class = "col-md-1"></div>
@@ -51,98 +53,100 @@
 				<h1>Controls (use controls.html)</h1>
 				</div>
 			</div>
-		</div>
+		</div> <!--jumbotron-->
 
 
 		<div class = "container">
 			<div class = "row">
 				<div class = "col-md-2">
 						<div class = "welcome"><h2>Welcome</h2></div>
-			</div>
+				</div>  <!--col-md-2-->
 				<div class ="col-md-7">
-				<div class='liveExample'> 
-			
-				<div class="readout">
-					<h3>What's in the model?</h3>
-					<table>
-						<tr>
-							<td class="label">name value:</td>
-							<td data-bind="text: stringValue"></td>
-						</tr>
-						<tr>
-							<td class="label">Password:</td>
-							<td data-bind="text: passwordValue"></td>
-						</tr>
-						<tr>
-							<td class="label">Bool value:</td>
-							<td data-bind='text: booleanValue() ? "True" : "False"'></td>
-						</tr>
-						<tr>
-							<td class="label">Selected option:</td>
-							<td data-bind="text: selectedOptionValue"></td>
-						</tr>
-						<tr>
-							<td class="label">Multi-selected options:</td>
-							<td data-bind="text: multipleSelectedOptionValues"></td>
-						</tr>
-						<tr>
-							<td class="label">Radio button selection:</td>
-							<td data-bind="text: radioSelectedOptionValue"></td>
-						</tr>
-					</table>
+					<div class='liveExample'> 
+					
+						<div class="readout">
+							<h3>What's in the model?</h3>
+							<table>
+								<tr>
+									<td class="label">name value:</td>
+									<td data-bind="text: stringValue"></td>
+								</tr>
+								<tr>
+									<td class="label">Password:</td>
+									<td data-bind="text: passwordValue"></td>
+								</tr>
+								<tr>
+									<td class="label">Bool value:</td>
+									<td data-bind='text: booleanValue() ? "True" : "False"'></td>
+								</tr>
+								<tr>
+									<td class="label">Selected option:</td>
+									<td data-bind="text: selectedOptionValue"></td>
+								</tr>
+								<tr>
+									<td class="label">Multi-selected options:</td>
+									<td data-bind="text: multipleSelectedOptionValues"></td>
+								</tr>
+								<tr>
+									<td class="label">Radio button selection:</td>
+									<td data-bind="text: radioSelectedOptionValue"></td>
+								</tr>
+							</table>
+						</div>  <!-- class = readout-->
+						 
+						<h3>HTML controls</h3>
+						<table>
+							<tr>
+								<td class="label">name value (updates on change):</td>
+								<td><input data-bind="value: stringValue" /></td>
+							</tr>
+							<tr>
+								<td class="label">Text value (updates on keystroke):</td>
+								<td><input data-bind='value: stringValue, valueUpdate: "afterkeydown"' /></td>
+							</tr>
+							<tr>
+								<td class="label">Text value (multi-line):</td>
+								<td><textarea data-bind="value: stringValue"> </textarea></td>
+							</tr>
+							<tr>
+								<td class="label">Password:</td>
+								<td><input type="password" data-bind="value: passwordValue" /></td>
+							</tr>
+							<tr>
+								<td class="label">Checkbox:</td>
+								<td><input type="checkbox" data-bind="checked: booleanValue" /></td>
+							</tr>
+							<tr>
+								<td class="label">Drop-down list:</td>
+								<td><select data-bind="options: optionValues, value: selectedOptionValue"></select></td>
+							</tr>
+							<tr>
+								<td class="label">Multi-select drop-down list:</td>
+								<td><select multiple="multiple" data-bind="options: optionValues, selectedOptions: multipleSelectedOptionValues"></select></td>
+							</tr>
+							<tr>
+								<td class="label">Radio buttons:</td>
+								<td>
+									<label><input type="radio" value="Alpha" data-bind="checked: radioSelectedOptionValue" />Alpha</label>
+									<label><input type="radio" value="Beta" data-bind="checked: radioSelectedOptionValue" />Beta</label>
+									<label><input type="radio" value="Gamma" data-bind="checked: radioSelectedOptionValue" />Gamma</label>
+								</td>
+							</tr>
+						</table>
+					
+					</div> <!--Live Example-->
+				</div> <!--col-md-7-->
+				<div class ="col-md-2">
+					<div class = "welcome"><h3>Controls</h3></div>
 				</div>
-				 
-				<h3>HTML controls</h3>
-				<table>
-					<tr>
-						<td class="label">name value (updates on change):</td>
-						<td><input data-bind="value: stringValue" /></td>
-					</tr>
-					<tr>
-						<td class="label">Text value (updates on keystroke):</td>
-						<td><input data-bind='value: stringValue, valueUpdate: "afterkeydown"' /></td>
-					</tr>
-					<tr>
-						<td class="label">Text value (multi-line):</td>
-						<td><textarea data-bind="value: stringValue"> </textarea></td>
-					</tr>
-					<tr>
-						<td class="label">Password:</td>
-						<td><input type="password" data-bind="value: passwordValue" /></td>
-					</tr>
-					<tr>
-						<td class="label">Checkbox:</td>
-						<td><input type="checkbox" data-bind="checked: booleanValue" /></td>
-					</tr>
-					<tr>
-						<td class="label">Drop-down list:</td>
-						<td><select data-bind="options: optionValues, value: selectedOptionValue"></select></td>
-					</tr>
-					<tr>
-						<td class="label">Multi-select drop-down list:</td>
-						<td><select multiple="multiple" data-bind="options: optionValues, selectedOptions: multipleSelectedOptionValues"></select></td>
-					</tr>
-					<tr>
-						<td class="label">Radio buttons:</td>
-						<td>
-							<label><input type="radio" value="Alpha" data-bind="checked: radioSelectedOptionValue" />Alpha</label>
-							<label><input type="radio" value="Beta" data-bind="checked: radioSelectedOptionValue" />Beta</label>
-							<label><input type="radio" value="Gamma" data-bind="checked: radioSelectedOptionValue" />Gamma</label>
-						</td>
-					</tr>
-				</table>
-				
-			</div>
-			</div>
-			<div class ="col-md-2">
-				<div class = "welcome"><h3>Controls</h3></div>
-			</div>
 
-			</div>
-	</div>
+			</div>  <!--row-->
+	</div>  <!--container-->
+	<!-- script the java , bootstrap, jquery and knockout -->
 	<script type="text/javascript" src = "http://knockoutjs.com/downloads/knockout-3.2.0.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="../bootstrap/js/bootstrap.min.js"></script>
 	<script src="../js/script_controls.js"></script>
+	<!-- script the java , bootstrap, jquery and knockout -->
 	</body>
 </html>

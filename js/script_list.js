@@ -16,9 +16,9 @@ var BetterListModel = function () {
         this.selectedItems([]); // Clear selection
     };
  
-    this.sortItems = function() {
+    this.sortItems = function() { //sort the items :D
         this.allItems.sort(function (a, b) {
-    return a.toLowerCase().localeCompare(b.toLowerCase());
+    return a.toLowerCase().localeCompare(b.toLowerCase()); //function that sorts alphabetically regardless if it is uppercase or lowercase, problem solved
 });
     };
 };

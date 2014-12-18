@@ -5,6 +5,6 @@ var viewModel = {
     optionValues: ["Alpha", "Beta", "Gamma"],
     selectedOptionValue: ko.observable("Gamma"),
     multipleSelectedOptionValues: ko.observable(["Alpha"]),
-    radioSelectedOptionValue: ko.observable("Beta")
+    radioSelectedOptionValue: ko.observable("Beta") //my variables that keep
 };
 ko.applyBindings(viewModel);

@@ -2,13 +2,14 @@
 <html>
 	<head>
 		<title>knockout People</title>
-		
+		<!-- link the css and bootstrap-->
 		<Link rel = "stylesheet" href = "../bootstrap/css/bootstrap.min.css" type = "text/css"/>
 		<Link rel = "stylesheet" href = "../bootstrap/css/bootstrap.css.map" type = "text/css"/>
 		<Link rel = "stylesheet" href = "../bootstrap/css/bootstrap-theme.css" type = "text/css"/>
 		<Link rel = "stylesheet" href = "../bootstrap/css/bootstrap-theme.css.map" type = "text/css"/>
 		<Link rel = "stylesheet" href = "../bootstrap/css/bootstrap-theme.min.css" type = "text/css"/>
 		<link rel='stylesheet' href='../css/styles_collections.css' type='text/css'>
+		<!-- link the css and bootstrap-->
 	</head>
 	<body background = "http://www.ambrosiasw.com/assets/images/graphics_products/ipadwallpaper/wallpaper/Leather.jpg">
 		<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
@@ -41,20 +42,20 @@
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
-		</nav>
+		</nav><!-- end nav -->
 		<div class="jumbotron top">
 			<div class = "row">
 				<div class = "col-md-1"></div>
 				<div class ="col-md-10">
-				<h1>Grocery List (use list.html)</h1>
+					<h1>Grocery List (use list.html)</h1>
 				</div>
 			</div>
-		</div>
+		</div> <!-- jumbotron -->
 		<div class = "container">
 			<div class = "row">
 				<div class = "col-md-2">
 					<div class = "welcome"><h2>Welcome</h2></div>
-				</div>
+				</div>  <!--col-md-2 -->
 				<div class = "col-md-7">
 					<div class='liveExample'> 
 						
@@ -79,19 +80,21 @@
 									</li>
 								</ul>
 							</li>
-						</ul>
+						</ul> <!--foreach: people-->
 						<label><input data-bind='checked: showRenderTimes' type='checkbox' /> Show render times</label> 
 						
-					</div>
-				</div>
+					</div>  <!--LiveExample-->
+				</div>  <!--col-md-7-->
 				<div class ="col-md-2">
 					<div class = "welcome"><h3>People Collections</h3></div>
 				</div>
-			</div>
-		</div>
+			</div> <!--row -->
+		</div><!-- container -->
+	<!-- script the java , bootstrap, jquery and knockout -->
 	<script type="text/javascript" src = "http://knockoutjs.com/downloads/knockout-3.2.0.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="../bootstrap/js/bootstrap.min.js"></script>
 	<script src="../js/script_collections.js"></script>
+	<!-- script the java , bootstrap, jquery and knockout -->
 	</body>
 </html>

@@ -2,13 +2,14 @@
 <html>
 	<head>
 		<title>knockout list</title>
-		
+		<!-- link the css and bootstrap-->
 		<Link rel = "stylesheet" href = "../bootstrap/css/bootstrap.min.css" type = "text/css"/>
 		<Link rel = "stylesheet" href = "../bootstrap/css/bootstrap.css.map" type = "text/css"/>
 		<Link rel = "stylesheet" href = "../bootstrap/css/bootstrap-theme.css" type = "text/css"/>
 		<Link rel = "stylesheet" href = "../bootstrap/css/bootstrap-theme.css.map" type = "text/css"/>
 		<Link rel = "stylesheet" href = "../bootstrap/css/bootstrap-theme.min.css" type = "text/css"/>
 		<link rel='stylesheet' href='../css/styles_list.css' type='text/css'>
+		<!-- link the css and bootstrap-->
 	</head>
 	<body background = "http://www.ambrosiasw.com/assets/images/graphics_products/ipadwallpaper/wallpaper/Leather.jpg">
 		<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
@@ -41,20 +42,20 @@
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
-		</nav>
-				<div class="jumbotron top">
+		</nav> <!--end nav-->
+		<div class="jumbotron top">
 			<div class = "row">
 				<div class = "col-md-1"></div>
 				<div class ="col-md-10">
 				<h1>Grocery List (use list.html)</h1>
 				</div>
-			</div>
-		</div>
+			</div> <!-- firts row-->
+		</div>  <!--jumbotron-->
 		<div class = "container">
 			<div class = "row">
 				<div class = "col-md-2">
 					<div class = "welcome"><h2>Welcome</h2></div>
-				</div>
+				</div><!--col-md-2-->
 				<div class = "col-md-7">
 					<div class='liveExample'> 
 						<h3>To add more elements to the list, enter here</h3>
@@ -68,16 +69,19 @@
 							<button data-bind="click: removeSelected, enable: selectedItems().length > 0">Remove</button>
 							<button data-bind="click: sortItems, enable: allItems().length > 1">Sort</button>
 						</div>
-					</div>
-				</div>
+					</div><!--LiveExample-->
+				</div> <!--col-md-7-->
 				<div class ="col-md-2">
 					<div class = "welcome"><h3>Grocery List</h3></div>
 				</div>
-			</div>
-		</div>
+			</div><!--row-->
+		</div><!--container-->
+		<!-- script the java , bootstrap, jquery and knockout -->
 	<script type="text/javascript" src = "http://knockoutjs.com/downloads/knockout-3.2.0.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="../bootstrap/js/bootstrap.min.js"></script>
 	<script src="../js/script_list.js"></script>
+		<!-- script the java , bootstrap, jquery and knockout -->
 	</body>
+
 </html>
