@@ -50,3 +50,7 @@ Answer the following questions in the [reflection.txt](README.md) file.
 2. What is MVVC? Why is it usefull?
 3. What does the data-bind attribute do?
 4. What does the following code do? ```ko.applyBindings(viewModel);```
+5. 
+
+### see my page
+##  http://alfpain.github.io/frontend-knockoutjs
